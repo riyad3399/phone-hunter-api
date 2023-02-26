@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+  <!-- header start -->
     <header class="mt-8">
         <div class="navbar bg-base-800 shadow-2xl px-12 rounded-lg">
             
@@ -30,11 +31,14 @@
             </div>
           </div>
     </header>
+    <!-- main section start -->
     <main>
         <section>
-           <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2      lg:grid-cols-3 gap-5 mx-10 my-12">
-               
-            </div>
+           <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2       lg:grid-cols-3 gap-5 mx-10 my-12">
+           </div>
+           <div id="no-found-message" class="hidden text-red-600 text-3xl font-medium text-center">
+              <h3>No Phone Found. Please try a new Search </h3>
+           </div>
         </section>
     </main>
     <footer></footer>
