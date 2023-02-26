@@ -8,15 +8,15 @@ const loadPhones = async () => {
 const showPhones = (phones) => {
     const phoneContainer = document.getElementById('phone-container');
     phones.forEach(phone => {
-        console.log(phone.image);
+        console.log(phone.slug);
         const phoneDiv = document.createElement('div');
         phoneDiv.classList.add('card');
         phoneDiv.innerHTML = `
-        <div class="card card-side bg-base-100 shadow-2xl">
+        <div class="card card-side bg-base-100 shadow-2xl w-full h-64">
            <figure><img src="${phone.image}" alt="Movie"/></figure>
           <div class="card-body">
-           <h2 class="card-title">New movie is released!</h2>
-           <p>Click the button to watch on Jetflix app.</p>
+           <h2 class="card-title font-bold">${phone.phone_name}</h2>
+           <p>${phone.slug}</p>
            <div class="card-actions justify-end">
             <button class="btn btn-primary">Watch</button>
            </div>
